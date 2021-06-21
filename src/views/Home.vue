@@ -64,10 +64,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .hours-grid {
+  max-width: 375px;
   display: grid;
   grid-template-columns: 100px 1fr;
   @media (min-width: 676px) {
     grid-template-columns: 1fr;
+    max-width: auto;
   }
   &__headers {
     display: grid;
@@ -137,5 +139,9 @@ export default defineComponent({
   width: 75px;
   border: solid 1px red;
   margin: auto;
+  @media (min-width: 676px) {
+    height: 50px;
+    width: 50px;
+  }
 }
 </style>
